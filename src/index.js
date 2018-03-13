@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-//import {Button} from 'antd-mobile'
+import {Button} from 'antd-mobile'
 import {Provider} from 'react-redux'
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import Login from './containers/login/login'
