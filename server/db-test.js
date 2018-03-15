@@ -2,7 +2,7 @@ const mongoose=require("mongoose");
 mongoose.connect('mongodb://localhost:27017/boss_test')
 const conn=mongoose.connection
 conn.on('connected',function(){
-    console.log("连接数据库成功");
+    console.log("连接成功");
 })
 const userSchema=mongoose.Schema({
     'name':{type:String,'required':true},
@@ -54,4 +54,4 @@ function testDelete(){
         console.log('remove()',err,result)
     })
 }
-testDelete()
+//testDelete()
